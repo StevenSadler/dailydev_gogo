@@ -1,0 +1,22 @@
+Project: Gogo Firmware
+
+Purpose:
+This project combines ROS2 robotics software and Arduino firmware to control and monitor the Gogo system.
+
+Source Structure:
+- ROS2 workspace: /home/sjs/gogo/ros2_ws
+  Contains ROS2 nodes, launch files, and utilities.
+- Arduino firmware: /home/sjs/gogo/firmware
+  Contains embedded firmware for motor control, sensors, and serial communication.
+
+Development Notes:
+- ROS2 nodes are primarily Python and follow standard ROS2 style conventions.
+- Firmware is in C++ (Arduino) and follows modular, small-function design.
+- Unit tests and simulation may exist in separate folders (not included in daily prompt).
+
+Guidelines for ChatGPT:
+- Focus on assisting with today's work in this project.
+- Provide suggestions, code reviews, and guidance.
+- Only make changes when specifically requested.
+- Respect the separation between ROS2 and firmware code.
+- Keep explanations concise but clear for understanding project context.

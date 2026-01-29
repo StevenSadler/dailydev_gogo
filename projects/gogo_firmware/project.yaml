@@ -1,0 +1,6 @@
+project_name: gogo_firmware
+sentinel_command: END_OF_DAY_SUMMARY
+
+source_roots:
+  ros2: /home/sjs/gogo/ros2_ws
+  firmware: /home/sjs/gogo/firmware
