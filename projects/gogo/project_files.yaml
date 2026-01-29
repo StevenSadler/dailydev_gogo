@@ -1,0 +1,21 @@
+# Project files to include in the daily prompt
+# Each entry:
+#   - key: semantic name used in the prompt
+#   - root: source root defined in project.yaml
+#   - path: path relative to that source root
+
+firmware_main:
+  root: firmware
+  path: src/main.cpp
+
+firmware_build_info:
+  root: firmware
+  path: include/BuildInfo.h
+
+firmware_motor_controller:
+  root: firmware
+  path: include/MotorController.h
+
+firmware_serial_manager:
+  root: firmware
+  path: include/SerialManager.h

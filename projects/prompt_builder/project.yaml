@@ -1,0 +1,5 @@
+project_name: prompt_builder
+sentinel_command: END_OF_DAY_SUMMARY
+
+source_roots:
+  prompt_builder: /home/sjs/dailydev_gogo

@@ -1,0 +1,9 @@
+# Project files to include in the daily prompt
+# Each entry:
+#   - key: semantic name used in the prompt
+#   - root: source root defined in project.yaml
+#   - path: path relative to that source root
+
+prompt_builder:
+  root: prompt_builder
+  path: tools/prompt_builder.py

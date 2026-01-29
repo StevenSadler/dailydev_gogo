@@ -1,0 +1,20 @@
+Project: Prompt Builder
+
+Purpose:
+This python tool generates ChatGPT prompts to maintain memory of a project across sessions.
+
+Source Structure:
+- Python directory: /home/sjs/dailydev_gogo
+  prompt_builder.py is the only code file.
+  It reads 3 other input files when creating a daily prompt:
+  - project_files.yaml
+  - project.yaml
+  - context/project_background.txt
+
+Development Notes:
+
+Guidelines for ChatGPT:
+- Focus on assisting with today's work in this project.
+- Provide suggestions, code reviews, and guidance.
+- Only make changes when specifically requested.
+- Keep explanations concise but clear for understanding project context.
