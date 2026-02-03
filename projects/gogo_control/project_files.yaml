@@ -1,0 +1,45 @@
+# Project files to include in the daily prompt
+# Each entry:
+#   - key: semantic name used in the prompt
+#   - root: source root defined in project.yaml
+#   - path: path relative to that source root
+
+firmware_main:
+  root: firmware
+  path: src/main.cpp
+
+firmware_build_info:
+  root: firmware
+  path: include/BuildInfo.h
+
+firmware_motor_controller:
+  root: firmware
+  path: include/MotorController.h
+
+firmware_serial_manager:
+  root: firmware
+  path: include/SerialManager.h
+
+xbox_twist_launch:
+  root: ros2
+  path: src/gogo_teleop/launch/xbox_twist.launch.py
+
+xbox_twist_params:
+  root: ros2
+  path: src/gogo_teleop/config/xbox_twist_params.yaml
+
+xbox_twist:
+  root: ros2
+  path: src/gogo_teleop/gogo_teleop/xbox_twist.py
+
+motor_command_msg:
+  root: ros2
+  path: src/gogo_interfaces/msg/MotorCommand.msg
+
+twist_serial:
+  root: ros2
+  path: src/gogo_control/gogo_control/twist_serial.py
+
+twist_serial_connection_handler:
+  root: ros2
+  path: src/gogo_control/gogo_control/twist_serial_connection_handler.py
