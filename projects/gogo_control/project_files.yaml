@@ -20,6 +20,10 @@ firmware_serial_manager:
   root: firmware
   path: include/SerialManager.h
 
+firmware_test_harness:
+  root: firmware
+  path: include/TestHarness.h
+
 xbox_twist_launch:
   root: ros2
   path: src/gogo_teleop/launch/xbox_twist.launch.py

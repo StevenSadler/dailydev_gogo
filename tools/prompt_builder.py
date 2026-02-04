@@ -19,25 +19,26 @@ def ensure_dir(path):
         os.makedirs(path)
 
 def save_summary(project_dir):
-    """Save ChatGPT end-of-day summary with auto-incrementing filenames."""
+    """Save ChatGPT end-of-day summary with auto-incrementing filenames (.md)."""
     summaries_dir = os.path.join(project_dir, "summaries")
     os.makedirs(summaries_dir, exist_ok=True)
 
     today = date.today().isoformat()
-    # Find existing summaries for today
-    existing_files = [f for f in os.listdir(summaries_dir) if f.startswith(today) and f.endswith(".txt")]
+    # Find existing summaries for today (.txt or .md)
+    existing_files = [f for f in os.listdir(summaries_dir) if f.startswith(today) and f.endswith(".txt") or f.endswith(".md")]
     N = 1
     if existing_files:
         # Extract existing N values
         nums = []
         for f in existing_files:
-            parts = f.replace(".txt","").split("_")
+            name, _ext = os.path.splitext(f)  # removes .txt or .md
+            parts = name.split("_")
             if len(parts) == 2 and parts[0] == today and parts[1].isdigit():
                 nums.append(int(parts[1]))
         if nums:
             N = max(nums) + 1
 
-    filename = f"{today}_{N}.txt"
+    filename = f"{today}_{N}.md"
     summary_path = os.path.join(summaries_dir, filename)
 
     print(
