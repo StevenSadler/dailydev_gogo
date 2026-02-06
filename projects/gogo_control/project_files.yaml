@@ -36,9 +36,17 @@ xbox_twist:
   root: ros2
   path: src/gogo_teleop/gogo_teleop/xbox_twist.py
 
+xbox_twist_test:
+  root: ros2
+  path: src/gogo_teleop/gogo_teleop/xbox_twist_test.py
+
 motor_command_msg:
   root: ros2
   path: src/gogo_interfaces/msg/MotorCommand.msg
+
+mode_select_msg:
+  root: ros2
+  path: src/gogo_interfaces/msg/ModeSelect.msg
 
 twist_serial:
   root: ros2
